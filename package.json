@@ -1,0 +1,17 @@
+{
+  "name": "atlas",
+  "version": "0.1.2",
+  "description": "Translate between country code and names",
+  "bin": "bin/atlas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD",
+  "dependencies": {
+    "coffee-script": "~1.6.2",
+    "fuzzy": "~0.1.0"
+  }
+}
