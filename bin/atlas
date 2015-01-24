@@ -1,0 +1,21 @@
+#!/usr/bin/env coffee
+fs = require 'fs'
+atlas = require('../lib')
+
+CAP = 0
+
+args = process.argv.slice 2
+input = args.shift()
+while opt = args.shift()
+  switch opt
+    when '--cap', '-c'
+      CAP = args.shift()
+
+if fs.existsSync input
+    countries = atlas.parse input
+else
+    countries = input.replace(',', ' ').split ' '
+
+# console.log countries
+for country in countries
+    console.log (atlas.toCode country) + ':', CAP
