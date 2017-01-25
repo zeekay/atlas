@@ -11,7 +11,7 @@
   "author": "",
   "license": "BSD",
   "dependencies": {
-    "coffee-script": "~1.6.2",
+    "coffee-script": "~1.12.3",
     "fuzzy": "~0.1.0"
   }
 }
